@@ -1,0 +1,14 @@
+{
+  "name": "metalsmith-basic-auth",
+  "description": "A Metalsmith plugin that enables adding HTTP basic authentication via YAML attributes.",
+  "author": "Darin Reid <darin@elcontraption.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:elcontraption/metalsmith-basic-auth.git"
+  },
+  "dependencies": {
+    "lodash.defaults": "^4.0.1",
+    "pass": "^0.2.0"
+  }
+}
