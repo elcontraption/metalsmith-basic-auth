@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-basic-auth",
-  "description": "A Metalsmith plugin that enables adding HTTP basic authentication via YAML attributes.",
+  "description": "A Metalsmith plugin to enable HTTP basic authentication via front-matter attributes.",
   "author": "Darin Reid <darin@elcontraption.com>",
   "repository": "git@github.com:elcontraption/metalsmith-basic-auth.git",
   "version": "0.1.0",

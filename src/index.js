@@ -9,7 +9,7 @@ const path = require('path');
 module.exports = plugin;
 
 /**
- * Metalsmith plugin that enables adding HTTP basic
+ * Metalsmith plugin to enable HTTP basic
  * authentication via YAML attributes.
  *
  * @param  {Object} opts
