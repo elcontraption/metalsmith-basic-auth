@@ -17,7 +17,7 @@ module.exports = plugin;
  */
 function plugin (opts) {
 
-    var opts = defaults(opts || {}, {
+    opts = defaults(opts || {}, {
         authName: 'Protected Area'
     });
 
@@ -29,9 +29,10 @@ function plugin (opts) {
       * @param  {Function} done
       */
     return function (files, metalsmith, done) {
+        var file;
 
         // Require `path` setting
-        if (!opts.hasOwnProperty('path')) done('[Metalsmith Basic Auth]: Path setting is required.');
+        if (!opts.hasOwnProperty('path')) done('Path setting is required');
 
         // Gather information on files with auth attributes
         for (file in files) {
@@ -61,9 +62,9 @@ function plugin (opts) {
         });
 
         // Add .htaccess file to files object
-        files[path.join(path.dirname(filepath), '.htaccess')] = {contents: htaccess};
+        files[path.join(path.dirname(filepath), '.htaccess')] = { contents: htaccess };
 
         // Add .htpasswd file to files object
-        files[path.join(path.dirname(filepath), '.htpasswd')] = {contents: htpasswd}
+        files[path.join(path.dirname(filepath), '.htpasswd')] = { contents: htpasswd };
     }
 }
