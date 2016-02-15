@@ -27,7 +27,7 @@ metalsmith.use(auth({
 }));
 ```
 
-Add the following to the top of a source file:
+Add the following to your front matter:
 ```yaml
 ---
 auth:
