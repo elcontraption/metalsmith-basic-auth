@@ -3,7 +3,7 @@
   "description": "A Metalsmith plugin to enable HTTP basic authentication via front-matter attributes.",
   "author": "Darin Reid <darin@elcontraption.com>",
   "repository": "git@github.com:elcontraption/metalsmith-basic-auth.git",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
