@@ -32,7 +32,7 @@ function plugin (opts) {
         var file;
 
         // Require `path` setting
-        if (!opts.hasOwnProperty('path')) done('Path setting is required');
+        if (!opts.hasOwnProperty('serverPath')) done('serverPath setting is required');
 
         // Gather information on files with auth attributes
         for (file in files) {
@@ -52,7 +52,7 @@ function plugin (opts) {
      * @param {Object} file
      */
     function addAuthFiles (files, filepath, file) {
-        var htaccess = 'AuthType Basic\nAuthName "' + opts.authName + '"\nAuthUserFile ' + path.join(opts.path, filepath) + '/.htpasswd\nRequire valid-user';
+        var htaccess = 'AuthType Basic\nAuthName "' + opts.authName + '"\nAuthUserFile ' + path.join(opts.serverPath, filepath) + '/.htpasswd\nRequire valid-user';
         var htpasswd = file.auth.user + ':';
 
         // Generate encrypted password
