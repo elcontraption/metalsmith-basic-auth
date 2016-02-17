@@ -31,7 +31,7 @@ function plugin (opts) {
     return function (files, metalsmith, done) {
         var file;
 
-        // Require `path` setting
+        // Require `serverPath` setting
         if (!opts.hasOwnProperty('serverPath')) done('serverPath setting is required');
 
         // Gather information on files with auth attributes
