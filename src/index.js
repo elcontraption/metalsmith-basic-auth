@@ -52,7 +52,7 @@ function plugin (opts) {
      * @param {Object} file
      */
     function addAuthFiles (files, filepath, file) {
-        var htaccess = 'AuthType Basic\nAuthName "' + opts.authName + '"\nAuthUserFile ' + path.join(opts.serverPath, filepath) + '/.htpasswd\nRequire valid-user';
+        var htaccess = 'AuthType Basic\nAuthName "' + opts.authName + '"\nAuthUserFile ' + path.join(opts.serverPath, path.dirname(filepath)) + '/.htpasswd\nRequire valid-user';
         var htpasswd = file.auth.user + ':';
 
         // Generate encrypted password
