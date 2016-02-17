@@ -1,11 +1,8 @@
 # Metalsmith Basic Auth
 A Metalsmith plugin to enable HTTP basic authentication via front-matter attributes.
 
-## TODO:
-- Add tests
-- Investigate Nginx option
-
-**Note:** HTTP basic authentication is only truly safe when using HTTPS.
+- So far, this is only supports authentication using Apache .htaccess files.
+- HTTP basic authentication is only truly safe when using HTTPS.
 
 ## Installation
 ```sh
